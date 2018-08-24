@@ -5,31 +5,77 @@
     <title>Curriculum Vitae</title>
 </head>
 <body>
-    <h1>Curriculum Vitae</h1>
-    <fieldset>
-        <legend>Personal Data</legend>
-        <label for="DUI" >DUI: </label>
-        <input type="text" name="DUI" id="DUI" placeholder="0000000-0" required>
+    <form action="#" method="GET">
+        <h1>Curriculum Vitae</h1>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <label for="DUI" >DUI: </label>
+            <input type="number" name="DUI" id="DUI" placeholder="0000000-0" required pattern="[0,9]{9}">
 
-        <label for="firstname" >Firstname: </label>
-        <input type="text" name="firstname" id="firstname" placeholder="Juancho" required>
+            <label for="firstname" >Firstname: </label>
+            <input type="text" name="firstname" id="firstname" placeholder="Juancho" required>
 
-        <label for="lastname" >Lastname: </label>
-        <input type="text" name="lastname" id="lastname" placeholder="Perez" required>
+            <label for="lastname" >Lastname: </label>
+            <input type="text" name="lastname" id="lastname" placeholder="Perez" required>
 
-        <label for="gender">Gender: </label>
-        <input type="radio" name="gender" id="gender">F
-        <input type="radio" name="gender" id="gender">M
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="gender">F
+            <input type="radio" name="gender" id="gender">M
 
-        <div>
-            <label for="cnumber">Contact number: </label>
-            <input type="text" name="cnumber" id="cnumber" placeholder="12345678">
+            <div>
+                <label for="cnumber">Contact number: </label>
+                <input type="text" name="cnumber" id="cnumber" placeholder="12345678">
 
-            <label for="bdate">Birth date: </label>
-            <input type="date">
-        </div>
-        
-    </fieldset>
+                <label for="bdate">Birth date: </label>
+                <input type="date" name="bdate" id="bdate" required>
+
+                <label for="cstatus">Civil Status: </label>
+                <select id="cstatus" required>
+                    <option value="single">Single :"v</option>
+                    <option value="married">Married </option>
+                </select>
+
+                <label for="img">Image: </label>
+                <input type="file" id="img">
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Work Experience</legend>
+            <textarea rows="10" cols="175" required>Experience.</textarea >
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Training</legend>
+            <textarea rows="10" cols="175" required>Academic Training.</textarea >
+        </fieldset>
+
+        <fieldset>
+            <legend>Futher Training</legend>
+            <fieldset>
+                <legend>Programing Languages</legend>
+                <input type="checkbox" name="check[]"> Java
+                <input type="checkbox" name="check[]"> C#
+                <input type="checkbox" name="check[]"> Python
+                <input type="checkbox" name="check[]"> C++
+                <input type="checkbox" name="check[]"> Ruby
+                
+            </fieldset>
+            <fieldset>
+                <legend>Web Technologies</legend>
+                <input type="checkbox" name="check[]"> HTML5
+                <input type="checkbox" name="check[]"> CSS/CSS3
+                <input type="checkbox" name="check[]"> Materialize CSS
+                <input type="checkbox" name="check[]"> JavaScript
+                <input type="checkbox" name="check[]"> Node.js
+                <input type="checkbox" name="check[]"> Spring MVC
+                            
+            </fieldset>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <a href="https://www.google.com/">Cancelar</a>
+    </form>
     
 </body>
 </html>
