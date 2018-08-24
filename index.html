@@ -10,7 +10,7 @@
         <fieldset>
             <legend>Personal Data</legend>
             <label for="DUI" >DUI: </label>
-            <input type="number" name="DUI" id="DUI" placeholder="0000000-0" required pattern="[0,9]{9}">
+            <input type="text" name="DUI" id="DUI" placeholder="0000000-0" required pattern="[0][0-9]{8}-[0-9]">
 
             <label for="firstname" >Firstname: </label>
             <input type="text" name="firstname" id="firstname" placeholder="Juancho" required>
@@ -19,8 +19,8 @@
             <input type="text" name="lastname" id="lastname" placeholder="Perez" required>
 
             <label for="gender">Gender: </label>
-            <input type="radio" name="gender" id="gender">F
-            <input type="radio" name="gender" id="gender">M
+            <input type="radio" name="gender" id="gender" value="f">F
+            <input type="radio" name="gender" id="gender" value="m">M
 
             <div>
                 <label for="cnumber">Contact number: </label>
@@ -55,21 +55,21 @@
             <legend>Futher Training</legend>
             <fieldset>
                 <legend>Programing Languages</legend>
-                <input type="checkbox" name="check[]"> Java
-                <input type="checkbox" name="check[]"> C#
-                <input type="checkbox" name="check[]"> Python
-                <input type="checkbox" name="check[]"> C++
-                <input type="checkbox" name="check[]"> Ruby
+                <input type="checkbox" name="check[]" value="Java"> Java
+                <input type="checkbox" name="check[]" value="c#"> C#
+                <input type="checkbox" name="check[]" value="python"> Python
+                <input type="checkbox" name="check[]" value="c++"> C++
+                <input type="checkbox" name="check[]" value="ruby"> Ruby
                 
             </fieldset>
             <fieldset>
                 <legend>Web Technologies</legend>
-                <input type="checkbox" name="check[]"> HTML5
-                <input type="checkbox" name="check[]"> CSS/CSS3
-                <input type="checkbox" name="check[]"> Materialize CSS
-                <input type="checkbox" name="check[]"> JavaScript
-                <input type="checkbox" name="check[]"> Node.js
-                <input type="checkbox" name="check[]"> Spring MVC
+                <input type="checkbox" name="check[]" value="html5"> HTML5
+                <input type="checkbox" name="check[]" value="css/css3"> CSS/CSS3
+                <input type="checkbox" name="check[]" value="materialize css"> Materialize CSS
+                <input type="checkbox" name="check[]" value="javascript"> JavaScript
+                <input type="checkbox" name="check[]" value="node.js"> Node.js
+                <input type="checkbox" name="check[]" value="spring mvc"> Spring MVC
                             
             </fieldset>
         </fieldset>
